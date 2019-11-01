@@ -5,8 +5,9 @@ html, body, #root {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
-div {
+div, section {
   overflow: hidden;
 }

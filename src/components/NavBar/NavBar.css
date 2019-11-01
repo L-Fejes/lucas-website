@@ -4,13 +4,8 @@
     left: 0;
     width: 100%;
     height: 50px;
-    transition: 100ms ease;
-    background-color: rgba(0, 0, 255, 1);
-}
-
-.navBar.topOfPage {
-    height: 100px;
-    background-color: rgba(0, 255, 0, 1);
+    transition: 200ms ease;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
 }
 
 .navBar > div {
@@ -19,30 +14,22 @@
     width: 1110px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .navBar > div > div {
-    position: absolute;
-    top: 0;
+    display: inline-block;
+    position: relative;
     height: 100%;
+    margin: 0;
 }
 .navBar > div > div:nth-child(1) {
-    top: 0;
-    left: 15px;
     width: 200px;
     text-align: left;
 }
 .navBar > div > div:nth-child(2) {
-    top: 0;
-    right: 15px;
-    width: calc(100% - 230px);
+    width: calc(100% - 200px);
     text-align: right;
-}
-
-.navBar p {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    margin-top: 37px;
 }
 
 .navBar ul, li {
@@ -59,11 +46,23 @@
     margin-left: 45px;
 }
 
+.navBar p,
 .navBar a {
     display: block;
-    font-size: 20px;
     text-decoration: none;
+    font-size: 20px;
     margin: 0;
     padding: 0;
+    margin-top: 14px;
+    transition: 200ms ease;
+}
+
+
+.navBar.topOfPage {
+    height: 100px;
+}
+
+.navBar.topOfPage p,
+.navBar.topOfPage a {
     margin-top: 37px;
 }
