@@ -9,5 +9,50 @@ html, body, #root {
 }
 
 div, section {
-  overflow: hidden;
+  box-sizing: border-box;
+}
+
+p, ul, li, button, a, span, h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+
+.primaryColor {
+  background-color: rgb(252, 147, 3);
+}
+
+.lighterPrimaryColor {
+  background-color: rgb(253, 165, 42);
+}
+
+.secondaryColor {
+  background-color: rgb(255, 251, 243);
+}
+
+.highlightColor {
+  background-color: rgb(49, 58, 91);
+}
+
+.lighterHighlightColor {
+  background-color: rgb(39, 54, 105);
 }

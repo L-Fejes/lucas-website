@@ -1,0 +1,41 @@
+.skillCardList {
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.skillCardSpace {
+    position: relative;
+    display: table-cell;
+    width: 250px;
+    height: 300px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+.skillCardSpace {
+    min-width: 270px;
+}
+
+.skillCard {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 120px);
+    width: 240px;
+    height: 300px;
+    background-color: rgb(255, 251, 243);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.skillCard:hover {
+    top: -5px;
+    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
+}

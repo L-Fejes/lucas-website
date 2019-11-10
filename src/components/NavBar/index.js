@@ -8,7 +8,9 @@ class NavBar extends React.Component {
 
         this.state = {
             yPosition: 0,
-            yLimit: 100
+            yLimit: 100,
+            isCloseToTop: true,
+            isMenuOpen: false
         };
     }
 
@@ -20,32 +22,45 @@ class NavBar extends React.Component {
         window.removeEventListener('scroll', this.handleScroll.bind(this));
     }
 
-    handleScroll(event) {
+    handleScroll(e) {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-        let yPosition = scrollTop.toFixed(0);
+        let isCloseToTop = scrollTop.toFixed(0) < 100;
+        this.setState({ isCloseToTop });
+    }
 
-        console.log("yPosition: ", yPosition);
-
-        this.setState({ yPosition });
+    onClick(e) {
+        let { isMenuOpen } = this.state;
+        this.setState({ isMenuOpen: !isMenuOpen });
     }
 
     render() {
-        let { yPosition, yLimit } = this.state;
-        let className = "navBar" + ( yPosition < yLimit ? " topOfPage" : "" );
+        let { isCloseToTop, isMenuOpen } = this.state;
+        let navBarClass = "navBar" + ( isCloseToTop ? " topOfPage" : "" );
+        let hamburgerContainerClass = "hamburgerContainer " + ( isMenuOpen ? "show" : "" );
 
         return(
-            <div className={className}>
-                <div>
+            <div className={navBarClass}>
+                <button className="hamburgerButton" onClick={this.onClick.bind(this)}>>></button>
+
+                <div className={hamburgerContainerClass}>
+                    <ul>
+                        <li><p>FEJES</p></li>
+                        <li><Link to="/">ABOUT</Link></li>
+                        <li><Link to="/">SKILLS</Link></li>
+                        <li><Link to="/">PROJECTS</Link></li>
+                    </ul>
+                </div>
+
+                <div className="navContainer">
                     <div>
                         <p>FEJES</p>
                     </div>
 
                     <div>
                         <ul>
-                            <li><Link to="/">THING 1</Link></li>
-                            <li><Link to="/">THING 2</Link></li>
-                            <li><Link to="/">THING 3</Link></li>
-                            <li><Link to="/">THING 4</Link></li>
+                        <li><Link to="/">ABOUT</Link></li>
+                        <li><Link to="/">SKILLS</Link></li>
+                        <li><Link to="/">PROJECTS</Link></li>
                         </ul>
                     </div>
                 </div>
