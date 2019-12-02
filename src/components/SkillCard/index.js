@@ -2,7 +2,7 @@ import React from 'react';
 import "./SkillCard.css";
 
 export const SkillCard = props => {
-    let { children, className, iconURL, altText } = props;
+    let { children, className, iconURL, altText, title } = props;
     let classes = "skillCard " + ( className || "" );
 
     return(
@@ -15,7 +15,10 @@ export const SkillCard = props => {
                 </div>
 
                 <div className="cardContent">
-                    {children}
+                    <h4>{title}</h4>
+                    <div>
+                        {children}
+                    </div>
                 </div>
             </div>
         </li>

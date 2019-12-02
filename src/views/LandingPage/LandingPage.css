@@ -7,6 +7,7 @@
 
 .landingPage .welcomeSection {
     background-color: rgb(255, 251, 243);
+    min-height: 633px;
 }
 
 .welcomeSection::before {
@@ -96,6 +97,7 @@
 
 .landingPage .aboutSection {
     background-color: rgb(255, 251, 243);
+    min-height: 633px;
 }
 
 .aboutSection::before {
@@ -169,6 +171,7 @@
 .landingPage .skillsSection {
     background-color: rgb(252, 147, 3);
     background-image: linear-gradient(to right, rgb(253, 165, 42), rgb(252, 147, 3));
+    min-height: 1000px;
 }
 
 .skillsSection::before {

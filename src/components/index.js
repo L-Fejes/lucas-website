@@ -3,6 +3,7 @@ export { default as FullPageSection } from "./FullPageSection";
 export { SkillCard, SkillCardList } from "./SkillCard";
 export { default as cSharpIcon } from "./SkillCard/c_sharp_icon.png";
 export { default as vrIcon } from "./SkillCard/vr_icon.png";
+export { default as uiUxIcon } from "./SkillCard/ui_ux_icon.png";
 export { ProjectCard, ProjectCardList, ProjectAffiliate, ProjectRelatedSkills } from "./ProjectCard";
 export { default as unicornDeathParty1 } from "./ProjectCard/unicorn_death_party_1.jpg";
 export { default as unicornDeathParty2 } from "./ProjectCard/unicorn_death_party_2.jpg";

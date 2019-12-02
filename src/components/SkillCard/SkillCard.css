@@ -8,18 +8,14 @@
 
 .skillCardSpace {
     position: relative;
-    display: table-cell;
-    width: 250px;
+    display: inline-block;
+    width: 33.3333%;
     height: 300px;
     list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
-}
-
-
-.skillCardSpace {
+    margin-bottom: 45px;
     min-width: 270px;
 }
 
@@ -43,7 +39,7 @@
 
 .skillCard .iconWrapper {
     position: absolute;
-    left: -10px;
+    left: -25px;
     top: -44.664px;
     width: 110px;
     height: 120px;
@@ -66,78 +62,116 @@
     margin: 34.664px 0;
     pointer-events: none;
     clip-path: 
-  }
+}
 
-  .hexagon > div {
-    content: "";
+.hexagon > div {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 84.85281374px;
+  pointer-events: none;
+}
+
+.hexagon > div::before {
+  content: "";
+  position: absolute;
+  width: 84.85281374px;
+  height: 84.85281374px;
+  pointer-events: none;
+}
+
+.hexagon > div:first-of-type {
+  bottom: calc(100% - 21.213203425px);
+  transform: scaleY(0.5);
+}
+
+.hexagon > div:last-of-type {
+  top: calc(100% - 21.213203425px);
+  transform: scaleY(0.5);
+}
+
+.hexagon > div:first-of-type::before {
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+  background-image: linear-gradient(45deg, rgb(39, 54, 105), rgb(49, 58, 91));
+}
+
+.hexagon > div:last-of-type::before {
+  transform-origin: top left;
+  transform: rotate(-45deg);
+  background-image: linear-gradient(-45deg, rgb(49, 58, 91), rgb(39, 54, 105));
+} */
+
+.skillCard .iconWrapper img {
     position: absolute;
-    width: 120px;
-    height: 84.85281374px;
-    pointer-events: none;
-  }
+    top: -15.90990256875px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
 
-  .hexagon > div::before {
-    content: "";
-    position: absolute;
-    width: 84.85281374px;
-    height: 84.85281374px;
-    pointer-events: none;
-  }
-  
-  .hexagon > div:first-of-type {
-    bottom: calc(100% - 21.213203425px);
-    transform: scaleY(0.5);
-  }
-  
-  .hexagon > div:last-of-type {
-    top: calc(100% - 21.213203425px);
-    transform: scaleY(0.5);
-  }
+.skillCard.unityIcon .iconWrapper img {
+    left: -1px;
+    top: 8px;
+    width: 100px;
+    height: 100px;
+}
 
-  .hexagon > div:first-of-type::before {
-    transform-origin: bottom left;
-    transform: rotate(45deg);
-    background-image: linear-gradient(45deg, rgb(39, 54, 105), rgb(49, 58, 91));
-  }
-  
-  .hexagon > div:last-of-type::before {
-    transform-origin: top left;
-    transform: rotate(-45deg);
-    background-image: linear-gradient(-45deg, rgb(49, 58, 91), rgb(39, 54, 105));
-  } */
+.skillCard.cSharpIcon .iconWrapper img {
+  left: 25px;
+  top: 30px;
+  width: calc(100px*0.65);
+  height: calc(87px*0.65);
+}
 
-  .skillCard .iconWrapper img {
-      position: absolute;
-      top: -15.90990256875px;
-      left: 10px;
-      width: 100px;
-      height: 100px;
-  }
+.skillCard.vrIcon .iconWrapper img {
+  left: 20px;
+  top: 37px;
+  width: calc(100px*0.67);
+  height: calc(71px*0.67);
+}
 
-  .skillCard.unityIcon .iconWrapper img {
-      left: -1px;
-      top: 8px;
-      width: 100px;
-      height: 100px;
-  }
+.skillCard.uiUxIcon .iconWrapper img {
+  left: 15px;
+  top: 22px;
+  height: 75px;
+  width: 75px;
+}
 
-  .skillCard.cSharpIcon .iconWrapper img {
-    left: 25px;
-    top: 30px;
-    width: calc(100px*0.65);
-    height: calc(87px*0.65);
-  }
+.skillCard.envDesignIcon .iconWrapper img {
+  left: 2px;
+  top: 20px;
+  width: calc(664px*0.16);
+  height: calc(402px*0.16);
+}
 
-  .skillCard.vrIcon .iconWrapper img {
-    left: 20px;
-    top: 37px;
-    width: calc(100px*0.67);
-    height: calc(71px*0.67);
-  }
+.skillCard .cardContent {
 
-  .skillCard.envDesignIcon .iconWrapper img {
-    left: 2px;
-    top: 20px;
-    width: calc(664px*0.16);
-    height: calc(402px*0.16);
-  }
+}
+
+.skillCard .cardContent h4 {
+  position: absolute;
+  left: 40%;
+  right: 0;
+  top: 0;
+  white-space: normal;
+}
+
+.skillCard .cardContent > div {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 85px;
+  bottom: 10px;
+  font-size: 13px;
+}
+
+.skillCard .cardContent > div ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+.skillCard .cardContent > div li {
+  list-style: disc;
+  display: list-item;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { 
     FullPageSection, SkillCard, SkillCardList, ProjectCard, ProjectCardList, 
-    ProjectAffiliate, ProjectRelatedSkills, cSharpIcon, vrIcon, unicornDeathParty1,
+    ProjectAffiliate, ProjectRelatedSkills, cSharpIcon, vrIcon, uiUxIcon, unicornDeathParty1,
     unicornDeathParty2, unicornDeathParty3, unicornDeathParty4, unicornDeathParty5,
     unicornDeathParty6, msg1, msg2, msg3, meditation1, lumier1, tron2
 } from '../../components';
@@ -37,13 +37,53 @@ class LandingPage extends React.Component {
                         <h3>MY SKILLSET</h3>
 
                         <SkillCardList>
-                            <SkillCard className="unityIcon" iconURL="https://pngimage.net/wp-content/uploads/2018/06/unity-logo-white-png-5.png" altText="Unity Icon">
+                            <SkillCard className="unityIcon" iconURL="https://pngimage.net/wp-content/uploads/2018/06/unity-logo-white-png-5.png" altText="Unity Icon" title="Unity 3D/2D">
+                                <ul>
+                                    <li>4+ years experience</li>
+                                    <li>Extensive experience in both 3D and 2D development</li>
+                                    <li>Particle Systems</li>
+                                    <li>Physics Engines</li>
+                                    <li>Unity Networking</li>
+                                </ul>
+                                <p>I'm miticulous in my scene management, organization, and am a stickler for clear and easily understood heirarchies.</p>
                             </SkillCard>
-                            <SkillCard className="cSharpIcon" iconURL={cSharpIcon} altText="C# Icon">
+                            <SkillCard className="cSharpIcon" iconURL={cSharpIcon} altText="C# Icon" title="C# Language">
+                                <ul>
+                                    <li>Expert Level</li>
+                                    <li>Single & Multi-Threaded Applications</li>
+                                    <li>Familiar with common and specialized code libraries</li>
+                                    <li>Networking via Sockets and Photon</li>
+                                </ul>
                             </SkillCard>
-                            <SkillCard className="vrIcon" iconURL={vrIcon} altText="VR Icon">
+                            <SkillCard className="vrIcon" iconURL={vrIcon} altText="VR Icon" title="Virtual Reality">
+                                <ul>
+                                    <li>2 years experience building VR Experiences and Games</li>
+                                    <li>VR Device Networks (Standalone and Supported)</li>
+                                    <li>3D Object Interaction</li>
+                                    <li>Locomotion Mechanics</li>
+                                    <li>VR-Specific Optimization</li>
+                                </ul>
+                                <p>I've worked on most major platforms, including among others: Oculus, Google, and HTC.</p>
                             </SkillCard>
-                            <SkillCard className="envDesignIcon" iconURL="https://images.squarespace-cdn.com/content/v1/5ad39fc3cc8fed81ac952ac2/1524073025953-WZXIZJHDUT2MN6BD8FEL/ke17ZwdGBToddI8pDm48kD9Icrq6xDuwyQvxODlueBlZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwOcXQtVcJ-9AgxsMtZAxIB9L6JDE71q4InZDwfSfVi2Agb_1Ja3ObQuT3HOeKEipQ/mountain.png" altText="Environmental Design Icon">
+                            <SkillCard className="envDesignIcon" iconURL="https://images.squarespace-cdn.com/content/v1/5ad39fc3cc8fed81ac952ac2/1524073025953-WZXIZJHDUT2MN6BD8FEL/ke17ZwdGBToddI8pDm48kD9Icrq6xDuwyQvxODlueBlZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwOcXQtVcJ-9AgxsMtZAxIB9L6JDE71q4InZDwfSfVi2Agb_1Ja3ObQuT3HOeKEipQ/mountain.png" altText="Environmental Design Icon" title="Environmental Design">
+                                <ul>
+                                    <li>4+ years experience</li>
+                                    <li>Lighting & Particle Systems</li>
+                                    <li>Multi-Platform</li>
+                                    <li>Custom Shaders</li>
+                                    <li>Interactive Elements</li>
+                                </ul>
+                                <p>I enjoy creating immersive environments for people to get lost in, and to help users feel like they are part of the world they're experiencing.</p>
+                            </SkillCard>
+                            <SkillCard className="uiUxIcon" iconURL={uiUxIcon} altText="UI and UX Icon" title="UI/UX Design">
+                                <ul>
+                                    <li>2 years experience building VR Experiences and Games</li>
+                                    <li>VR Device Networks (Standalone and Supported)</li>
+                                    <li>3D Object Interaction</li>
+                                    <li>Locomotion Mechanics</li>
+                                    <li>VR-Specific Optimization</li>
+                                </ul>
+                                <p>I've worked on most major platforms, including among others: Oculus, Google, and HTC.</p>
                             </SkillCard>
                         </SkillCardList>
                     </div>
