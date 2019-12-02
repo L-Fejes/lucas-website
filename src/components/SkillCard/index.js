@@ -9,8 +9,11 @@ export const SkillCard = props => {
         <li className="skillCardSpace">
             <div className={classes}>
                 <div className="iconWrapper">
-                    <img src={iconURL} alt={altText} />
+                    <div className="hexagon">
+                        <img src={iconURL} alt={altText} />
+                    </div>
                 </div>
+
                 <div className="cardContent">
                     {children}
                 </div>
@@ -21,7 +24,6 @@ export const SkillCard = props => {
 
 export const SkillCardList = props => {
     let { children } = props;
-    let 
 
     return(
         <ul className="skillCardList">

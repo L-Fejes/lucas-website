@@ -84,12 +84,6 @@
 
 .welcomeSection a:hover {
     top: 215px;
-    border: 2px solid rgb(252, 147, 3);
-    width: 116px;
-    height: 41.6px;
-    background-image: none;
-    background-color: rgb(255, 251, 243);
-    color: rgb(252, 147, 3);
     box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -117,6 +111,56 @@
     transform: rotate(30deg);
 }
 
+.aboutSection::after {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 110%;
+    height: 200px;
+    background-image: linear-gradient(to right,rgb(253, 165, 42), rgb(252, 147, 3));
+    transform-origin: top left;
+    transform: rotate(-5deg);
+}
+
+.aboutSection .wrapper {
+    position: relative;
+    padding-top: calc(10vh);
+    margin-left: 550px;
+}
+
+.aboutSection a {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 120px;
+    height: 45.6px;
+    text-decoration: none;
+    color: rgb(255, 251, 243);
+    letter-spacing: 0;
+    font-family: rubik,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    outline: none!important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px solid rgb(252, 147, 3);
+    background-image: linear-gradient(to right,rgb(253, 165, 42), rgb(252, 147, 3));
+    background-color: rgb(252, 147, 3);
+    transition: 100ms ease-out;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.aboutSection a:hover {
+    bottom: -65px;
+    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 
 
 
@@ -139,11 +183,17 @@
     transform: rotate(-5deg);
 }
 
-.skillWraper {
+.skillsSection .wrapper {
+    position: relative;
+    padding-top: calc(10vh);
     width: 100%;
-    text-align: center;
-    overflow: hidden;
 }
+
+.skillsSection .skillCardList {
+    margin-top: 60px;
+}
+
+
 
 
 
@@ -151,6 +201,12 @@
 
 .landingPage .projectsSection {
     background-color: rgb(255, 251, 243);
+}
+
+.projectsSection .wrapper {
+    position: relative;
+    padding-top: calc(10vh);
+    width: 100%;
 }
 
 
@@ -227,12 +283,6 @@
     
     .welcomeSection a:hover {
         top: 215px;
-        border: 2px solid rgb(252, 147, 3);
-        width: 116px;
-        height: 41.6px;
-        background-image: none;
-        background-color: rgb(255, 251, 243);
-        color: rgb(252, 147, 3);
         box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
     }
 }
@@ -300,12 +350,6 @@
     
     .welcomeSection a:hover {
         top: 215px;
-        border: 2px solid rgb(252, 147, 3);
-        width: 116px;
-        height: 41.6px;
-        background-image: none;
-        background-color: rgb(255, 251, 243);
-        color: rgb(252, 147, 3);
         box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
     }
 }

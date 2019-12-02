@@ -20,6 +20,7 @@
     padding: 0;
     margin-top: 14px;
     transition: 200ms ease;
+    color: rgba(0, 0, 0, 1);
 }
 
 .navBar > .navContainer {
@@ -161,6 +162,7 @@
         padding: 0;
         margin-top: 14px;
         transition: 200ms ease;
+        color: rgba(0, 0, 0, 1);
     }
 
 
@@ -170,7 +172,7 @@
 
     .navBar.topOfPage p,
     .navBar.topOfPage a {
-        margin-top: 14px;
+        margin-top: 10px;
     }
 }
 
@@ -238,8 +240,9 @@
         font-size: 20px;
         margin: 0;
         padding: 0;
-        margin-top: 14px;
+        margin-top: 10px;
         transition: 200ms ease;
+        color: rgba(0, 0, 0, 1);
     }
 
 

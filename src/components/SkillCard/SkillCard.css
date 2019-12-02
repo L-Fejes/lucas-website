@@ -31,6 +31,7 @@
     height: 300px;
     background-color: rgb(255, 251, 243);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgb(49, 58, 91);
     cursor: pointer;
     transition: 200ms ease-out;
 }
@@ -39,3 +40,104 @@
     top: -5px;
     box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
+
+.skillCard .iconWrapper {
+    position: absolute;
+    left: -10px;
+    top: -44.664px;
+    width: 110px;
+    height: 120px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.skillCard .hexagon { 
+  position: relative;
+  width: 110px; 
+  height: 120px;
+  background-image: linear-gradient(to right, rgb(39, 54, 105), rgb(49, 58, 91));
+  clip-path: polygon(0% 28.867513459%, 50% 0%, 100% 28.867513459%, 100% 71.13248654051871177%, 50% 100%, 0% 71.13248654051871177%);
+}
+
+/* .hexagon {
+    position: relative;
+    width: 120px; 
+    height: 69.328px;
+    background-image: linear-gradient(to right, rgb(39, 54, 105), rgb(49, 58, 91));
+    margin: 34.664px 0;
+    pointer-events: none;
+    clip-path: 
+  }
+
+  .hexagon > div {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 84.85281374px;
+    pointer-events: none;
+  }
+
+  .hexagon > div::before {
+    content: "";
+    position: absolute;
+    width: 84.85281374px;
+    height: 84.85281374px;
+    pointer-events: none;
+  }
+  
+  .hexagon > div:first-of-type {
+    bottom: calc(100% - 21.213203425px);
+    transform: scaleY(0.5);
+  }
+  
+  .hexagon > div:last-of-type {
+    top: calc(100% - 21.213203425px);
+    transform: scaleY(0.5);
+  }
+
+  .hexagon > div:first-of-type::before {
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+    background-image: linear-gradient(45deg, rgb(39, 54, 105), rgb(49, 58, 91));
+  }
+  
+  .hexagon > div:last-of-type::before {
+    transform-origin: top left;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(-45deg, rgb(49, 58, 91), rgb(39, 54, 105));
+  } */
+
+  .skillCard .iconWrapper img {
+      position: absolute;
+      top: -15.90990256875px;
+      left: 10px;
+      width: 100px;
+      height: 100px;
+  }
+
+  .skillCard.unityIcon .iconWrapper img {
+      left: -1px;
+      top: 8px;
+      width: 100px;
+      height: 100px;
+  }
+
+  .skillCard.cSharpIcon .iconWrapper img {
+    left: 25px;
+    top: 30px;
+    width: calc(100px*0.65);
+    height: calc(87px*0.65);
+  }
+
+  .skillCard.vrIcon .iconWrapper img {
+    left: 20px;
+    top: 37px;
+    width: calc(100px*0.67);
+    height: calc(71px*0.67);
+  }
+
+  .skillCard.envDesignIcon .iconWrapper img {
+    left: 2px;
+    top: 20px;
+    width: calc(664px*0.16);
+    height: calc(402px*0.16);
+  }

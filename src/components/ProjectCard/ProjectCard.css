@@ -1,0 +1,95 @@
+.projectCardList {
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.projectCardRow {
+    position: relative;
+    display: table-row;
+    width: calc(100% + 30px);
+}
+
+.projectCardSpace {
+    position: relative;
+    display: table-cell;
+    width: 50vw;
+    height: 300px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    transition: 200ms ease-out;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.projectCardSpace:hover {
+    filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.1));
+}
+
+.projectCard {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 15px);
+    height: 275px;
+    background-color: rgb(255, 251, 243);
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.projectCardSpace:last-of-type .projectCard {
+    left: 15px;
+}
+.projectCardSpace:first-of-type .projectCard {
+    right: 15px;
+}
+.projectCardRow:last-of-type .projectCardSpace:first-of-type .projectCard,
+.projectCardRow:last-of-type .projectCardSpace:last-of-type .projectCard {
+    left: unset;
+    right: 15px;
+}
+
+.projectCard:hover {
+    top: -5px;
+    /* box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1); */
+}
+
+
+.projectCard .hexagonWrapper {
+    position: absolute;
+    left: calc(50% - 65px);
+    top: calc(50% - 75px);
+    width: calc(150px * 0.916666667);
+    height: 150px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+    transition: 200ms ease-out;
+    opacity: 1;
+}
+
+.projectCard:hover .hexagonWrapper {
+    opacity: 0;
+}
+
+.projectCard .hexagonWrapper .hexagon {
+    position: relative;
+    width: calc(150px * 0.916666667);
+    height: 150px;
+    background-color: rgba(255, 251, 243, 0.9);
+    clip-path: polygon(0% 28.867513459%, 50% 0%, 100% 28.867513459%, 100% 71.13248654051871177%, 50% 100%, 0% 71.13248654051871177%);
+    transition: 200ms ease-out;
+    overflow: hidden;
+}
+
+.projectCard .hexagonWrapper .hexagon p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 35px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

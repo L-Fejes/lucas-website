@@ -4,7 +4,6 @@
     height: 100%;
     min-height: 100vh;
     background-color: rgba(240, 240, 240, 1);
-    overflow: hidden;
 }
 
 .headerPadding {
@@ -14,7 +13,7 @@
 .fullPageSection > .contentWrapper  {
     position: relative;
     width: 100%x;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
