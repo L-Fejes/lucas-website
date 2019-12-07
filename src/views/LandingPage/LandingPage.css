@@ -1,5 +1,5 @@
 .landingPage {
-    background-color: rgb(255, 251, 243);
+    background-color: rgb(255, 254, 253);
 }
 
 .landingPage h3,
@@ -14,13 +14,22 @@
     .landingPage h1 {
         text-align: left;
     }
+
+    .landingPage .skillsSection h3,
+    .landingPage .projectsSection h3,
+    .landingPage .skillsSection h2,
+    .landingPage .projectsSection h2,
+    .landingPage .skillsSection h1,
+    .landingPage .projectsSection h1 {
+        text-align: center;
+    }
 }
 
 
 /* Welcome Section */
 
 .landingPage .welcomeSection {
-    background-color: rgb(255, 251, 243);
+    background-color: rgb(255, 254, 253);
     height: 100vh;
     min-height: 633px;
 }
@@ -94,7 +103,7 @@
     width: 120px;
     height: 45.6px;
     text-decoration: none;
-    color: rgb(255, 251, 243);
+    color: rgb(255, 254, 253);
     letter-spacing: 0;
     font-family: rubik,sans-serif;
     font-weight: 500;
@@ -192,7 +201,7 @@
 /* About Section */
 
 .landingPage .aboutSection {
-    background-color: rgb(255, 251, 243);
+    background-color: rgb(255, 254, 253);
     min-height: 633px;
 }
 
@@ -224,8 +233,8 @@
 .aboutSection .wrapper {
     position: relative;
     padding-top: calc(10vh);
-    margin-left: calc(50% - 200px);
-    width: 400px;
+    margin-left: calc(50% - 150px);
+    width: 300px;
 }
 
 .aboutSection a {
@@ -235,7 +244,7 @@
     width: 120px;
     height: 45.6px;
     text-decoration: none;
-    color: rgb(255, 251, 243);
+    color: rgb(255, 254, 253);
     letter-spacing: 0;
     font-family: rubik,sans-serif;
     font-weight: 500;
@@ -250,6 +259,7 @@
     background-color: rgb(252, 147, 3);
     transition: 100ms ease-out;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .aboutSection a:hover {
@@ -302,7 +312,7 @@
     left: 0;
     width: 110%;
     height: 200px;
-    background-color:rgb(255, 251, 243);
+    background-color:rgb(255, 254, 253);
     transform-origin: top left;
     transform: rotate(-5deg);
 }
@@ -322,7 +332,7 @@
 /* Projects Section */
 
 .landingPage .projectsSection {
-    background-color: rgb(255, 251, 243);
+    background-color: rgb(255, 254, 253);
 }
 
 .projectsSection .wrapper {
@@ -337,7 +347,7 @@
 
 @media (min-width: 800px) {
     .landingPage .welcomeSection {
-        background-color: rgb(255, 251, 243);
+        background-color: rgb(255, 254, 253);
     }
 
     .welcomeSection .message h1 {
@@ -382,7 +392,7 @@
         width: 120px;
         height: 45.6px;
         text-decoration: none;
-        color: rgb(255, 251, 243);
+        color: rgb(255, 254, 253);
         letter-spacing: 0;
         font-family: rubik,sans-serif;
         font-weight: 500;
@@ -416,7 +426,7 @@
         position: relative;
         min-height: 500px;
         height: 100vh;
-        background-color: rgb(255, 251, 243);
+        background-color: rgb(255, 254, 253);
     }
     
     .welcomeSection::before {
@@ -449,7 +459,7 @@
         width: 120px;
         height: 45.6px;
         text-decoration: none;
-        color: rgb(255, 251, 243);
+        color: rgb(255, 254, 253);
         letter-spacing: 0;
         font-family: rubik,sans-serif;
         font-weight: 500;

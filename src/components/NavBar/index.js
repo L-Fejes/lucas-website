@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
+import { HashLink, genericHashLink } from 'react-router-hash-link';
 import './NavBar.css';
 
 class NavBar extends React.Component {
@@ -44,23 +45,23 @@ class NavBar extends React.Component {
 
                 <div className={hamburgerContainerClass}>
                     <ul>
-                        <li><p>FEJES</p></li>
-                        <li><Link to="/">ABOUT</Link></li>
-                        <li><Link to="/">SKILLS</Link></li>
-                        <li><Link to="/">PROJECTS</Link></li>
+                        <li><HashLink to="/#landing" onClick={this.onClick.bind(this)}>FEJES</HashLink></li>
+                        <li><HashLink to="/#about" onClick={this.onClick.bind(this)}>ABOUT</HashLink></li>
+                        <li><HashLink to="/#skills" onClick={this.onClick.bind(this)}>SKILLS</HashLink></li>
+                        <li><HashLink to="/#projects" onClick={this.onClick.bind(this)}>PROJECTS</HashLink></li>
                     </ul>
                 </div>
 
                 <div className="navContainer">
                     <div>
-                        <p>FEJES</p>
+                        <li><HashLink to="/#landing">FEJES</HashLink></li>
                     </div>
 
                     <div>
                         <ul>
-                        <li><Link to="/">ABOUT</Link></li>
-                        <li><Link to="/">SKILLS</Link></li>
-                        <li><Link to="/">PROJECTS</Link></li>
+                            <li><HashLink to="/#about">ABOUT</HashLink></li>
+                            <li><HashLink to="/#skills">SKILLS</HashLink></li>
+                            <li><HashLink to="/#projects">PROJECTS</HashLink></li>
                         </ul>
                     </div>
                 </div>

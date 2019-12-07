@@ -4,7 +4,7 @@ import {
     FullPageSection, SkillCard, SkillCardList, ProjectCard, ProjectCardList, 
     ProjectAffiliate, ProjectRelatedSkills, cSharpIcon, vrIcon, uiUxIcon, unicornDeathParty1,
     unicornDeathParty2, unicornDeathParty3, unicornDeathParty4, unicornDeathParty5,
-    unicornDeathParty6, msg1, msg2, msg3, meditation1, lumier1, tron2
+    unicornDeathParty6, msg1, msg2, msg3, meditation1, lumier1, tron2, mizuNoCafe1, audioVisualizer1, aliBaba1, pikachuKidnapping, shale
 } from '../../components';
 import "./LandingPage.css";
 
@@ -12,7 +12,7 @@ class LandingPage extends React.Component {
     render() {
         return(
             <div className="landingPage">
-                <FullPageSection className="headerPadding welcomeSection">
+                <FullPageSection id="landing" className="headerPadding welcomeSection">
                     <div className="message">
                         <h2>HELLO</h2>
                         <h1>I AM LUCAS FEJES</h1>
@@ -25,7 +25,7 @@ class LandingPage extends React.Component {
                     </div>
                 </FullPageSection>
 
-                <FullPageSection className="aboutSection">
+                <FullPageSection id="about" className="aboutSection">
                     <div className="wrapper">
                         <h3>A BIT ABOUT ME</h3>
                         <p>I'm Lucas, a Unity Developer from Toronto, Canada. I've been building experiences with the Unity Engine for over 4 years, and for the past 2 I've been creating Immersive VR Experiences for anyone to enjoy.</p>
@@ -35,7 +35,7 @@ class LandingPage extends React.Component {
                     </div>
                 </FullPageSection>
 
-                <FullPageSection className="skillsSection">
+                <FullPageSection id="skills" className="skillsSection">
                     <div className="wrapper">
                         <h3>MY SKILLSET</h3>
 
@@ -80,19 +80,17 @@ class LandingPage extends React.Component {
                             </SkillCard>
                             <SkillCard className="uiUxIcon" iconURL={uiUxIcon} altText="UI and UX Icon" title="UI/UX Design">
                                 <ul>
-                                    <li>2 years experience building VR Experiences and Games</li>
-                                    <li>VR Device Networks (Standalone and Supported)</li>
-                                    <li>3D Object Interaction</li>
-                                    <li>Locomotion Mechanics</li>
-                                    <li>VR-Specific Optimization</li>
+                                    <li>Skilled with the Unity UI Toolset</li>
+                                    <li>UI Design for VR Environments</li>
                                 </ul>
-                                <p>I've worked on most major platforms, including among others: Oculus, Google, and HTC.</p>
+                                <p>I design clear, and concise, visually appealing UI, to provide the user with both information and control of different 
+                                    types of experiences.</p>
                             </SkillCard>
                         </SkillCardList>
                     </div>
                 </FullPageSection>
 
-                <FullPageSection className="projectsSection">
+                <FullPageSection id="projects" className="projectsSection">
                     <div className="wrapper">
                         <h3>SOME OF MY WORK</h3>
                         <p></p>
@@ -100,29 +98,23 @@ class LandingPage extends React.Component {
                         <ProjectCardList>
                             <ProjectCard title="MADISON SQUARE GARDEN: VR EXPERIENCE" hexagonTopMargin="35px" imageURL={msg1} altText="MSG Customers In the VR Experience" backgroundSize="165%" />
 
-                            <ProjectCard title="AD. METRICS" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="AdMETRIX" hexagonTopMargin="64px" imageURL={lumier1} altText="Demonstration Environment in VR" />
 
-                            <ProjectCard title="MOOD POD" hexagonTopMargin="64px" imageURL={lumier1} altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="MOOD POD: MUSIC" hexagonTopMargin="57px" imageURL={audioVisualizer1} altText="Mood Pod Audio Visualizer" />
 
-                            <ProjectCard title="MEDITATION EXPERIENCE" hexagonTopMargin="53px" imageURL={meditation1} altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="MOOD POD: MEDITATION" hexagonTopMargin="57px" imageURL={meditation1} altText="Peaceful Low-Poly Forest" />
 
-                            <ProjectCard title="CANDYLAND MASSACRE" hexagonTopMargin="53px" imageURL={unicornDeathParty1} altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="CANDYLAND MASSACRE" hexagonTopMargin="57px" imageURL={unicornDeathParty1} altText="Brightly Colored VR FPS" />
 
-                            <ProjectCard title="LINE FRIENDS DEMO" hexagonTopMargin="53px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="MIZU NO CAF&Eacute;" hexagonTopMargin="64px" imageURL={mizuNoCafe1} altText="Underwater Cafe" />
 
-                            <ProjectCard title="MIZU NO CAF&eacute;" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="ALIBABA DEMO" hexagonTopMargin="64px" imageURL={aliBaba1} altText="Floating City with Dark Poem" />
 
-                            <ProjectCard title="ALIBABA DEMO" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="PIKACHU KIDNAPING" hexagonTopMargin="57px" imageURL={pikachuKidnapping} altText="Team Rocket Pikachu Kidnapping Simulator" />
 
-                            <ProjectCard title="PIKACHU KIDNAPING" hexagonTopMargin="53px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="TRON IMMERSION" hexagonTopMargin="57px" imageURL={tron2} altText="Light-Cycle Battle on the Grid" />        
 
-                            <ProjectCard title="TRON IMMERSION" hexagonTopMargin="53px" imageURL={tron2} altText="MSG Customers In the VR Experience" />        
-
-                            <ProjectCard title="BOT DEBOCLE" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
-
-                            <ProjectCard title="GHOST GAME" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
-
-                            <ProjectCard title="SHALE" hexagonTopMargin="64px" imageURL="" altText="MSG Customers In the VR Experience" />
+                            <ProjectCard title="SHALE" hexagonTopMargin="64px" imageURL={shale} altText="Pre-historic Undersea Creatures" />
 
                         </ProjectCardList>
                     </div>

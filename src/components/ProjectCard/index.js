@@ -43,29 +43,10 @@ export const ProjectCard = props => {
 
 export const ProjectCardList = props => {
     let { children } = props;
-    let projectRows = [];
-
-    for(let i = 0; i < children.length; i++) {
-        if(i%2 - 1 === 0) {
-            projectRows.push(
-                <div className="projectCardRow">
-                    {children[i - 1]}
-                    {children[i]}
-                </div>
-            )
-        }
-        else if(i === children.length - 1) {
-            projectRows.push(
-                <div className="projectCardRow">
-                    {children[i]}
-                </div>
-            )
-        }
-    }
 
     return(
         <div className="projectCardList">
-            {projectRows}
+            {children}
         </div>
-    );
+    )
 }

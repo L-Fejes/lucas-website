@@ -6,58 +6,36 @@
     max-width: 100%;
 }
 
-.projectCardRow {
-    position: relative;
-    display: table-row;
-    width: calc(100% + 30px);
-}
-
 .projectCardSpace {
     position: relative;
-    display: table-cell;
-    width: 50vw;
+    display: inline-block;
+    width: 100%;
     height: 300px;
     list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
-    transition: 200ms ease-out;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
-}
-
-.projectCardSpace:hover {
-    filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.1));
+    margin-bottom: 45px;
+    min-width: 270px;
 }
 
 .projectCard {
     position: absolute;
     top: 0;
-    width: calc(100% - 15px);
-    height: 275px;
-    background-color: rgb(255, 251, 243);
-    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 254, 253);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgb(49, 58, 91);
     cursor: pointer;
     transition: 200ms ease-out;
 }
 
-.projectCardSpace:last-of-type .projectCard {
-    left: 15px;
-}
-.projectCardSpace:first-of-type .projectCard {
-    right: 15px;
-}
-.projectCardRow:last-of-type .projectCardSpace:first-of-type .projectCard,
-.projectCardRow:last-of-type .projectCardSpace:last-of-type .projectCard {
-    left: unset;
-    right: 15px;
-}
-
 .projectCard:hover {
     top: -5px;
-    /* box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .projectCard .hexagonWrapper {
     position: absolute;
@@ -78,7 +56,8 @@
     position: relative;
     width: calc(150px * 0.916666667);
     height: 150px;
-    background-color: rgba(255, 251, 243, 0.9);
+    background-color: rgba(49, 58, 91, 0.9);
+    background-image: linear-gradient(to right, rgba(39, 54, 105, 0.9), rgba(49, 58, 91, 0.9));
     clip-path: polygon(0% 28.867513459%, 50% 0%, 100% 28.867513459%, 100% 71.13248654051871177%, 50% 100%, 0% 71.13248654051871177%);
     transition: 200ms ease-out;
     overflow: hidden;
@@ -92,4 +71,27 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 550px) {
+    .projectCardSpace {
+        width: 100%; 
+    }
+    .projectCard {
+        left: calc(50% - 250px);
+        width: 500px;
+    }
+}
+
+  
+@media (min-width: 1050px) {
+    .projectCardSpace {
+        width: 50%; 
+    }
+    .projectCard {
+        left: calc(50% - 250px);
+        width: 500px;
+    }
 }

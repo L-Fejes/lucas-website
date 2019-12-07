@@ -2,11 +2,11 @@ import React from 'react';
 import "./FullPageSection.css";
 
 const FullPageSection = props => {
-    let { children, className } = props;
+    let { children, className, id, name } = props;
     let classes = "fullPageSection " + ( className || "" );
 
     return(
-        <section className={classes}>
+        <section id={id} name={name} className={classes}>
             <div className="contentWrapper">
                 {children}
             </div>
