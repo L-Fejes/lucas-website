@@ -4,6 +4,7 @@
     height: 100%;
     min-height: 100vh;
     background-color: rgba(240, 240, 240, 1);
+    overflow: hidden;
 }
 
 .headerPadding {

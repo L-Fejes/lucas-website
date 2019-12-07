@@ -21,7 +21,7 @@ class LandingPage extends React.Component {
 
                     <div className="buttons">
                         <a href="mailto:l.j.b.fejes@gmail.com">HIRE ME</a>
-                        <a href={uiUxIcon} download>MY CV</a>
+                        <a href="https://www.lucasfejes.com/lucas_fejes_resume.pdf" download>MY CV</a>
                     </div>
                 </FullPageSection>
 
@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
                         <p>I'm Lucas, a Unity Developer from Toronto, Canada. I've been building experiences with the Unity Engine for over 4 years, and for the past 2 I've been creating Immersive VR Experiences for anyone to enjoy.</p>
                         <p>In additon to my core skills in in Environmental Design, Game Mechanics, and UI/UX, I have also led projects, trained staff on the use of software, coordinated software and hardware integration for clients, and managed deployment on-site during experience launches. I'd like to think I've got a fair bit of experience under my belt, but I also love finding new and challenging projects to work on.</p>
                         <p>So get in touch, and see what I can do for you.</p>
-                        <a href="https://google.com" download>MY CV</a>
+                        <a href="https://www.lucasfejes.com/lucas_fejes_resume.pdf" download>MY CV</a>
                     </div>
                 </FullPageSection>
 

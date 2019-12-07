@@ -202,7 +202,8 @@
 
 .landingPage .aboutSection {
     background-color: rgb(255, 254, 253);
-    min-height: 633px;
+    height: calc(100vh + 50px);
+    min-height: 700px;
 }
 
 .aboutSection::before {
@@ -268,6 +269,11 @@
 }
 
 @media (min-width: 800px) {
+    .fullPageSection.aboutSection {
+        height: calc(100vh);
+        min-height: 500px;
+    }
+
     .aboutSection .wrapper {
         position: relative;
         padding-top: calc(10vh);
@@ -281,6 +287,11 @@
 }
 
 @media (min-width: 1150px) {
+    .fullPageSection.aboutSection {
+        height: calc(100vh);
+        min-height: 610px;
+    }
+
     .aboutSection .wrapper {
         position: relative;
         padding-top: calc(10vh);
@@ -292,7 +303,6 @@
         left: 0;
     }
 }
-
 
 
 
