@@ -40,7 +40,7 @@ class LandingPage extends React.Component {
                         <h3>MY SKILLSET</h3>
 
                         <SkillCardList>
-                            <SkillCard className="unityIcon" iconURL="https://pngimage.net/wp-content/uploads/2018/06/unity-logo-white-png-5.png" altText="Unity Icon" title="Unity 3D/2D">
+                            <SkillCard className="unityIcon" iconURL="https://storage.googleapis.com/lucas-website-257623.appspot.com/Icons/unity.png" altText="Unity Icon" title="Unity 3D/2D">
                                 <ul>
                                     <li>4+ years experience</li>
                                     <li>Extensive experience in both 3D and 2D development</li>
@@ -50,7 +50,7 @@ class LandingPage extends React.Component {
                                 </ul>
                                 <p>I'm miticulous in my scene management, organization, and am a stickler for clear and easily understood heirarchies.</p>
                             </SkillCard>
-                            <SkillCard className="cSharpIcon" iconURL={cSharpIcon} altText="C# Icon" title="C# Language">
+                            <SkillCard className="cSharpIcon" iconURL="https://storage.googleapis.com/lucas-website-257623.appspot.com/Icons/c_sharp_icon.png" altText="C# Icon" title="C# Language">
                                 <ul>
                                     <li>Expert Level</li>
                                     <li>Single & Multi-Threaded Applications</li>
@@ -58,7 +58,7 @@ class LandingPage extends React.Component {
                                     <li>Networking via Sockets and Photon</li>
                                 </ul>
                             </SkillCard>
-                            <SkillCard className="vrIcon" iconURL={vrIcon} altText="VR Icon" title="Virtual Reality">
+                            <SkillCard className="vrIcon" iconURL="https://storage.googleapis.com/lucas-website-257623.appspot.com/Icons/vr_icon.png" altText="VR Icon" title="Virtual Reality">
                                 <ul>
                                     <li>2 years experience building VR Experiences and Games</li>
                                     <li>VR Device Networks (Standalone and Supported)</li>
@@ -68,7 +68,7 @@ class LandingPage extends React.Component {
                                 </ul>
                                 <p>I've worked on most major platforms, including among others: Oculus, Google, and HTC.</p>
                             </SkillCard>
-                            <SkillCard className="envDesignIcon" iconURL="https://images.squarespace-cdn.com/content/v1/5ad39fc3cc8fed81ac952ac2/1524073025953-WZXIZJHDUT2MN6BD8FEL/ke17ZwdGBToddI8pDm48kD9Icrq6xDuwyQvxODlueBlZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwOcXQtVcJ-9AgxsMtZAxIB9L6JDE71q4InZDwfSfVi2Agb_1Ja3ObQuT3HOeKEipQ/mountain.png" altText="Environmental Design Icon" title="Environmental Design">
+                            <SkillCard className="envDesignIcon" iconURL="https://storage.googleapis.com/lucas-website-257623.appspot.com/Icons/mountain.png" altText="Environmental Design Icon" title="Environmental Design">
                                 <ul>
                                     <li>4+ years experience</li>
                                     <li>Lighting & Particle Systems</li>
@@ -78,7 +78,7 @@ class LandingPage extends React.Component {
                                 </ul>
                                 <p>I enjoy creating immersive environments for people to get lost in, and to help users feel like they are part of the world they're experiencing.</p>
                             </SkillCard>
-                            <SkillCard className="uiUxIcon" iconURL={uiUxIcon} altText="UI and UX Icon" title="UI/UX Design">
+                            <SkillCard className="uiUxIcon" iconURL="https://storage.googleapis.com/lucas-website-257623.appspot.com/Icons/ui_ux_icon.png" altText="UI and UX Icon" title="UI/UX Design">
                                 <ul>
                                     <li>Skilled with the Unity UI Toolset</li>
                                     <li>UI Design for VR Environments</li>
